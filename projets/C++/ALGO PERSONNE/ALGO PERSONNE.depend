@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1715680033 source:c:\users\pc\desktop\algo personne\main.cpp
+	<iostream>
+	"personne.cpp"
+
+1716062014 source:c:\users\pc\desktop\algo personne\personne.cpp
+	<iostream>
+
+1716062217 c:\users\pc\desktop\algo personne\personne.cpp
+	<iostream>
+

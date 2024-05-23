@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibonnaci</title>
+</head>
+<body>
+    <script>
+        var n=Number(prompt("Entrez un nombre superieur ou egal à 2"))
+
+        while (n<2) {
+            var n=Number(prompt("le nombre doit etre superieur ou egal a deux"))
+        }
+        var tab = ["a+","b+"]
+        for (let i = 2; i <= n; i++) {
+           tab[i] = tab[i-1]+tab[i-2] 
+        }
+        alert(`Le ${n}ième est : ${tab[n]}`)
+    </script>
+</body>
+</html>

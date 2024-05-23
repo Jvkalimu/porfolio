@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrice</title>
+</head>
+<body>
+    <script>
+        var n,i,m,j
+        m=Number(prompt("Entrez le nombre des lignes pour la matrice pour la matrice A"))
+        while (m<=0) {
+            m=Number(prompt("le nombre des lignes pour la matrice pour la matrice A doit etre positif"))
+        }
+        n=Number(prompt("Entrez le nombre des colonnes pour la matrice pour la matrice A"))
+        while (n<=0) {
+            n=Number(prompt("le nombre des colonnes pour la matrice pour la matrice A doit etre positif"))
+        }
+        var A=[
+            [m], 
+            [n]
+        ]
+        var X=[n]
+        var Y=[n]
+        i=0;
+        while(i<m){
+            j=0
+            while(j<n){
+                A[i][j]=Number(prompt("Remplissez la matrice A à l'élément "+(i+1)+","+(j+1)))
+                j++
+        }
+        i++
+        }
+        j=0
+        while(j<n){
+                X[j]=Number(prompt("Saisissez les elements pour le vecteur X"))
+                j++
+        }
+        i=0
+        j=0
+        while(i<m){
+                Y[i]= 0
+                i++
+        }
+        i=0
+        while(i<m){
+            j=0
+            while(j<n){
+                Y[i]=Y[i]+ (A[i][j]*X[j])
+                j++
+        }
+        i++
+        }
+        j=0
+        i=0
+        while(i<m){
+                 alert("Y["+i+"] = " +Y[i])
+                i++
+        }
+
+
+    </script>
+</body>
+</html>

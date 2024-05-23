@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1716066567 source:c:\users\pc\desktop\structurepoint\points.cpp
+	<iostream>
+
+1716061593 source:c:\users\pc\desktop\structurepoint\main.cpp
+	<iostream>
+	"points.cpp"
+
+1716066567 c:\users\pc\desktop\structurepoint\points.cpp
+	<iostream>
+

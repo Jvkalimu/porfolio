@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes richesses</title>
+</head>
+<body>
+    <script>
+        var som=0
+        var montant=[12]
+        for (var i = 0; i < 12; i++) {
+            montant[i]=Number(prompt("Votre tante vous a envoyee combien en ce mois numero "+(i+1)))          
+            som=Number(som+montant[i])
+
+        }
+            var min=montant[0]
+        for (var i = 0; i < 12; i++) {
+
+            if (min>montant[i]) {
+                min=montant[i] }
+
+        }
+        var max=montant[0]
+        for (var i = 0; i < 12; i++) {
+
+        if (max<montant[i]) {
+            max=montant[i] }
+
+}
+        var moyenne = som/12
+
+            alert("Votre somme annuelle est de "+som)
+            alert("Votre montant minimal de l'annee est "+min)
+            alert("Votre montant maximal de l'annee est "+max)
+            alert("Votre montant moyen de l'annee est "+moyenne)
+    </script>
+</body>
+</html>
